@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <ul>
+      <% for(var i=0; i < values.length; i++) { %>
+        <li>
+          <%= values[i] %>
+        </li>
+      <% } %>
+    </ul>
+
+    <br>
+    <br>
+    <form action='/todo', method='post'>
+      <input type='textarea' cols='4' name='task'>
+      <input type='submit' value='Dodaj task'>
+    </form>
+    <br>
+    <br>
+    <form action = "/", method="get">
+      <input type='submit' value='Logout'>
+    </form>
+  </body>
+</html>
